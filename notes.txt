@@ -1,0 +1,10 @@
+Idea:
+O player é um dev existindo
+
+Os inimigos são clientes dando ideias
+
+em algumas fazes terá um item que é "push to main" q se pegar se fudeu
+
+é necessário coletar códigos 
+
+buffs: chatgpt, stack overflow
