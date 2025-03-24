@@ -50,14 +50,15 @@ hr {
 }
 
 main {
+    display: flex;
+    justify-content: center;
+
     div {
-        margin: 0px 500px 0px 500px;
         background-color: #000000;
-        display: flex;
         box-shadow: 10px 10px 0 #EF036C;
         h1 {
             color: white;
-            align-items: center;
+
         }
     }
 }

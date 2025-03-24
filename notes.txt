@@ -1,10 +1,10 @@
 Idea:
 O player é um dev existindo
 
-Os inimigos são clientes dando ideias
+Os inimigos são clientes dando ideias e usuários dando feedback, ser atingido por eles aumenta a quantide de código para pegar o push-main;
 
-em algumas fazes terá um item que é "push to main" q se pegar se fudeu
+se pegar o push main antes de ter os códigos mínimos, perde na hora;
 
-é necessário coletar códigos 
+é necessário coletar códigos até uma quantia mínima, para que possa coletar o item "push-main" e encerrar a fase;
 
-buffs: chatgpt, stack overflow
+buffs: chatgpt, stack overflow, café
