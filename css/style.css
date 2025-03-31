@@ -1,47 +1,154 @@
 * {
-    margin: 0
+    margin: 0;
+    padding: 0; 
+}
+body {
+    font-family: Pixelify Sans, Arial;
+    color: #575757;
+    font-size: 18px;
 }
 
-.imagemDev {
-    margin: 10px 0px 0px 10px;
+.container {
+    width: 80%;
+    margin-left: 10px;
 }
 
-header {
-    background-color: white;
-
-    nav {
-        margin: none;
-        float: inline-end;
-
+.header {
+    background-color: #ffffff;
+    .header-logo {
+        img {
+            height: 80px;
+        }
+    }
+    .header-menu {
+        border: 1px solid white;
+        color: white;
+        float: right;
+        font-size: 2em;
+        padding: 5px;
+        margin: 5px;
+    }
+    .header-nav {
+        border: 1px solid white;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        display: none;
         ul {
             list-style: none;
-
             li {
-                display:inline-block;
-                font-family: fantasy;
-                text-transform: uppercase;
-                box-shadow: 5px -10px 0px #a0a0a0;
-                margin: 30px;
-
+                padding: 10px;
                 a {
-                    color: rgb(224, 224, 224);
+                    text-transform: uppercase;
                     text-decoration: none;
-                    transition: 300ms all;
-                    font-size: 27px;
-                    background-color: #1a1a1a;
-                    padding: 5px 5px 5px 5px;
-                } 
-
-                a:hover{
-                    border-radius: 5px;
-                    background-color:#000000;
-                    box-shadow: 10px -12px 0px #a0a0a0;
+                    font-weight: bold;
+                    color: #ccc;
                 }
             }
         }
     }
 }
 
+.container-img {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    background-color: #01257D;
+    text-align: center;
+    p{
+        margin-left: 40px;
+        font-weight: bold;
+        font-size:xx-large;
+        color: #990030;
+    }
+    img {
+        width: 100%;
+    }
+    .banner-img {
+        margin: 10px 50px 10px ;
+        width: 80%;
+    }
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+@media (min-width: 1000px) {
+    .header {
+        .header-menu {
+            display: none;
+        }
+        .header-nav {
+            display: block;
+            float: right;
+            border: 0;
+            ul{
+                li {
+                    display: inline-block;
+                    a:hover {
+                        color: white;
+                        border-bottom: 5px solid red;
+                        padding: 27px;
+                    }
+                    a {
+                        padding: 27px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*.imagemDev {
+    width: 30%;
+}
+
+header {
+    .container {
+        width: 80%;
+        margin: auto;
+        background-color: white;
+        
+        nav {
+            margin: none;
+            float: inline-end;
+            
+            ul {
+                list-style: none;
+                
+                li {
+                    display:inline-block;
+                    font-family: fantasy;
+                    text-transform: uppercase;
+                    box-shadow: 5px -10px 0px #a0a0a0;
+                    margin: 30px;
+                    
+                    a {
+                        color: rgb(224, 224, 224);
+                        text-decoration: none;
+                        transition: 300ms all;
+                        font-size: 27px;
+                        background-color: #1a1a1a;
+                        padding: 5px 5px 5px 5px;
+                    } 
+                    
+                    a:hover{
+                        border-radius: 5px;
+                        background-color:#000000;
+                        box-shadow: 10px -12px 0px #a0a0a0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+*/
 hr {
     border: none; /* Remove a borda padrão */
     height: 15px; /* Define a espessura */
@@ -64,5 +171,5 @@ main {
 }
 
 body { 
-    background-color: #31EC56;
+    background-color: #00FFFF;
 }

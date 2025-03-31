@@ -5,45 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jojinho</title>
 
+    <link rel="shortcut icon" href="images/pixil-layer-Background.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bytesized&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link href="css/style.css" rel="stylesheet">
 
-</head>
-
-<body>
-    <header>
-        <a href="index.html" title="Home" rel="">
-            <img src="images/logoDev.png" class="imagemDev" alt="Logo Dev" width="4%">
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <a>
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a>
-                        Sobre
-                    </a>
-                </li>
-                <li>
-                    <a>
-                        Quem sou
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <hr>
-    </header>
-    <main>
-        <div>
-            <h1>>Hello World</h1>
+    <body>
+        <header class="header">
+            <div class="container">
+                <a href="index.html" title="Home" class="header-logo">
+                    <img src="images/pixil-layer-Background.png" alt="Logo Marvel">
+                </a>
+                <a href="javascript:mostrarMenu()" title="menu" class="header-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <nav class="header-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html" title="Home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sobre.html" title="Sobre">
+                                Sobre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="noticias.html" title="Notícias">
+                                Notícias
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contato.hmlt" title="Contato">
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <div class="container-img">
+            <p>
+                Hello World!
+                <i class="fa-sharp fa-solid fa-code" style="color: #990030;"></i>
+            </p>
+            <img src="images/pixil-frame-0.png" alt="Demolidor Logo" class="banner-img">
         </div>
+    
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script>
+            function mostrarMenu() {
+                //document.querySelector(".header-menu")
+                $(".header-nav").toggle();
+            }
+        </script>
+    </body>
+    </html>
 
-
-    </main>
-    <footer>
-
-    </footer>
-</body>
-</html>
+    <!--
+</head>
+    <body>
+        <header>
+            <div class="container">
+                <a href="index.html" title="Home" rel="">
+                    <img src="images/pixil-layer-Background.png" class="imagemDev" alt="Logo Dev">
+                </a>
+                <a href="javascript:mostrarMenu()" title="menu" class="header-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                Sobre
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                Quem sou
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <hr>
+            </div>
+        </header>
+        <main>
+            <div>
+                <h1>>Hello World</h1>
+            </div>
+            
+            
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+    </html>
+    -->
