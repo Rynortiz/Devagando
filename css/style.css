@@ -3,25 +3,31 @@
     padding: 0; 
 }
 body {
+    width: 100%;
     font-family: Pixelify Sans, Arial;
     color: #575757;
-    font-size: 18px;
+    font-size: 26px;
 }
 
 .container {
-    width: 80%;
-    margin-left: 10px;
+    width: 95%;
+    margin: auto;
 }
 
 .header {
-    background-color: #ffffff;
+    background-color: #dadada;
     .header-logo {
         img {
             height: 80px;
         }
     }
+    hr {
+        width: 100%;
+        border: none; /* Remove a borda padrão */
+        height: 10px; /* Define a espessura */
+        background-color: rgb(165, 4, 4); /* Cor da linha */
+    }
     .header-menu {
-        border: 1px solid white;
         color: white;
         float: right;
         font-size: 2em;
@@ -29,20 +35,25 @@ body {
         margin: 5px;
     }
     .header-nav {
-        border: 1px solid white;
+        border: 3px solid rgb(133, 132, 132);
         padding: 10px;
         margin: 10px;
         text-align: center;
         display: none;
         ul {
             list-style: none;
+            .li1 {
+                border: 3px solid #990030;
+            }
             li {
+                border: 3px solid #990030;
+                border-top: 0px;
                 padding: 10px;
                 a {
                     text-transform: uppercase;
                     text-decoration: none;
                     font-weight: bold;
-                    color: #ccc;
+                    color: #222;
                 }
             }
         }
@@ -65,7 +76,7 @@ body {
         width: 100%;
     }
     .banner-img {
-        margin: 10px 50px 10px ;
+        margin: 10px 60px 10px ;
         width: 80%;
     }
 }
@@ -80,6 +91,7 @@ body {
 
 @media (min-width: 1000px) {
     .header {
+
         .header-menu {
             display: none;
         }
@@ -89,14 +101,17 @@ body {
             border: 0;
             ul{
                 li {
+                    margin: 10px;
+                    box-shadow: 5px -10px 0px #01257D;
                     display: inline-block;
+                    border: 3px solid #990030;
                     a:hover {
-                        color: white;
-                        border-bottom: 5px solid red;
-                        padding: 27px;
+                        color: #01257D;
+                        margin: 10px;
                     }
                     a {
-                        padding: 27px;
+                        transition: 300ms all;
+                        padding: 23px;
                     }
                 }
             }
@@ -104,8 +119,9 @@ body {
     }
 }
 
-/*.imagemDev {
-    width: 30%;
+/*
+.imagemDev {
+width: 30%;
 }
 
 header {
@@ -148,24 +164,17 @@ header {
     }
 }
 
-*/
-hr {
-    border: none; /* Remove a borda padrão */
-    height: 15px; /* Define a espessura */
-    background-color: black; /* Cor da linha */
-    margin: 5px 0px auto;
-}
 
 main {
     display: flex;
     justify-content: center;
-
+    
     div {
         background-color: #000000;
         box-shadow: 10px 10px 0 #EF036C;
         h1 {
             color: white;
-
+            
         }
     }
 }
@@ -173,3 +182,4 @@ main {
 body { 
     background-color: #00FFFF;
 }
+*/
