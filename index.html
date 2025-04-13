@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,118 +8,164 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bytesized&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Bytesized&family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet">
+
     <link rel="shortcut icon" href="images/pixil-layer-Background.png">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
-</head>
-    <body>
-        <header class="header">
-            <div class="container">
-                <a href="index.html" title="Home" class="header-logo">
-                    <img src="images/pixil-layer-Background.png" alt="Logo Dev">
-                </a>
-                <a href="javascript:mostrarMenu()" title="menu" class="header-menu">
-                    <i class="fa-sharp fa-solid fa-bars" style="color:#990030;"></i>
-                </a>
-                <nav class="header-nav">
-                    <ul>
-                        <li class="li1">
-                            <a href="index.html" title="Home">
+    <link rel="javascript" href="index.js">
 
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="sobre.html" title="Sobre">
-                                Sobre
-                            </a>
-                        </li>
-                        <li>
-                            <a href="noticias.html" title="Notícias">
-                                Notícias
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contato.hmlt" title="Contato">
-                                Contato
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <hr>
-        </header>
-        
-        <div class="container-img">
-            <p>
-                Hello World!
-                <i class="fa-sharp fa-solid fa-code" style="color: #990030"></i>
-            </p>
-            <img src="images/pixil-frame-0.png" alt="Demolidor Logo" class="banner-img">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" title="Home" class="header-logo">
+                <img src="images/pixil-layer-Background.png" alt="Logo Dev">
+            </a>
+            <a href="javascript:mostrarMenu()" title="menu" class="header-menu">
+                <i class="fa-sharp fa-solid fa-bars" style="color:#990030;"></i>
+            </a>
+            <nav class="header-nav">
+                <ul>
+                    <li class="li1">
+                        <a href="index.html" title="Home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sobre" title="Sobre">
+                            Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a href="noticias.html" title="Notícias">
+                            Notícias
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contato.hmlt" title="Contato">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="js/aos.js"></script>
-        <script>
-            function mostrarMenu() {
-                //document.querySelector(".header-menu")
-                $(".header-nav").toggle();
-            }
-        </script>
-    </body>
-    </html>
+        <hr>
+    </header>
+    <button id="btnTopo" title="Voltar ao topo">↑</button>
+    <div class="container-titulo" title="Devagando">
+        <p>
+            DeVagando
+        </p>
+    </div>
+    <div class="container-img">
+        <p>
+            Hello World!
+            <i class="fa-sharp fa-solid fa-code" style="color: #990030"></i>
+        </p>
+        <img src="images/pixil-frame-0.png" alt="Dev like" class="banner-img">
+    </div>
 
-    <!--
-</head>
-    <body>
-        <header>
-            <div class="container">
-                <a href="index.html" title="Home" rel="">
-                    <img src="images/pixil-layer-Background.png" class="imagemDev" alt="Logo Dev">
-                </a>
-                <a href="javascript:mostrarMenu()" title="menu" class="header-menu">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-                <nav>
-                    <ul>
-                        <li>
-                            <a>
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                Sobre
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                Quem sou
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                Contato
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <hr>
+    <div class="sobre" id="sobre" title="Um pouco sobre o jogo" data-aos="fade">
+        <p class="frase">
+            console.log
+        </p>
+        <p>
+            ("Bem-vindo! O escritório de Devagando lhe aguarda")
+        </p>
+        <img src="images/jump1.png" alt="Dev pulando" class="devPulo">
+    </div>
+    <br>
+    <div class="sobre" title="Mais sobre o jogo" data-aos="fade">
+        <p>
+            Aqui, você é um simples Dev tentando completar mais um trabalho,<br>
+            Porém nunca é tão simples assim
+        </p>
+        <img src="images/jump2.png" alt="Dev cabisbaixo">
+    </div>
+    <div class="sobre" title="Mais sobre o jogo" data-aos="fade">
+        <p class="frase">
+            Sua principal missão: 
+        </p>
+        <p>
+            Coletar códigos!
+        </p>
+        <div>
+            <img src="images/walking2.png" title="Dev andando">
+            <img src="images/cod1.png" title="Codigo coletável">
+        </div>
+        <p>
+            Bem simples, não?
+        </p>
+    </div>
+    <div class="container-instrucoes">
+        <div class="sobre"  title="Mais sobre o jogo" data-aos="fade" >
+            <p>
+                Ao início de toda rodada,<br>
+                você terá uma quantidade mínima de códigos para coletar
+            </p>
+            <img src="images/cod1.png" alt="Codigo coletável">
+            <p>
+                E claro que não podemos nos esquecer do prazo!
+            </p>
+            <img class="relogio" src="images/relogio.png" alt="Relogio">
+        </div>
+
+        <div class="sobre" title="Mais sobre o jogo" data-aos="fade">
+            <p class="frase">
+                Porém muito cuidado!
+            </p>
+            <p>
+                Os nemesis de todos os dev estão á solta!
+            </p>
+            <div class="inimigos">
+                <img class="inimigo" src="images/enemy1.png" alt="Inimigo">
+                <img class="inimigo" src="images/enemy2.png" alt="Inimigo">
             </div>
-        </header>
-        <main>
-            <div>
-                <h1>>Hello World</h1>
-            </div>
-            
-            
-        </main>
-        <footer>
-            
-        </footer>
-    </body>
-    </html>
-    -->
+            <p>
+                Os clientes e usuários!<br>
+                Com seus feedbacks e ideias mirabolantes<br>
+                São capazes de atrasar até o maior dev!<br>
+                <p class="frase">!!!</p>
+                Sempre que esbarrar com um deles,<br> a quantidade de codigos para completar o commit aumentam!
+            </p>
+        </div>
+    </div>
+    <div class="sobre">
+        <p>
+            Ao coletar os codigos necessários,<br>
+            Corra para o seu PC! é necessário dar commit nos códigos
+        </p>
+        <img src="images/mesapc.png" alt="Mesa do PC">
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        function mostrarMenu() {
+            //document.querySelector(".header-menu")
+            $(".header-nav").toggle();
+        }
+    </script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        window.onscroll = function () {
+          const btn = document.getElementById("btnTopo");
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            btn.style.display = "block";
+          } else {
+            btn.style.display = "none";
+          }
+        };
+        document.getElementById("btnTopo").onclick = function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+      </script>
+</body>
+
+</html>
