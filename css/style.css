@@ -10,6 +10,9 @@ body {
     font-size: 26px;
 }
 
+.container-jogo {
+    text-align: center;
+}
 .container {
     width: 95%;
     padding-top: 15px;
@@ -251,6 +254,11 @@ body {
         .container-instrucoes {
             display: grid;
             grid-template-columns: 50% 50%;
+        }
+    }
+    .footer {
+        .header-logo {
+            width: 5%;
         }
     }
     
