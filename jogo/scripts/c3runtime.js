@@ -1277,6 +1277,10 @@ function or(l, r)
 }
 
 self.C3_ExpressionFuncs = [
+		() => 30,
+		() => "tempo",
+		() => 75,
+		() => 350,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			const v1 = p._GetNode(1).GetVar();
@@ -1290,10 +1294,6 @@ self.C3_ExpressionFuncs = [
 		() => "",
 		() => "pouso",
 		() => "pulow",
-		() => 30,
-		() => "tempo",
-		() => 75,
-		() => 350,
 		p => {
 			const n0 = p._GetNode(0);
 			const n1 = p._GetNode(1);
