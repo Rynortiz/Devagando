@@ -44,6 +44,11 @@
                             Mídias
                         </a>
                     </li>
+                    <li class="feedbacks">
+                        <a href="feedbacks.html" title="Deixe seu feedback">
+                            Feedbacks
+                        </a>
+                    </li>
                     <li class="jogar">
                         <a href="jogo.html" title="Jogar">
                             Jogar
@@ -93,22 +98,6 @@
             $(".header-nav").toggle();
         }
     </script>
-    <script>
-        AOS.init();
-    </script>
-    <script>
-        window.onscroll = function () {
-          const btn = document.getElementById("btnTopo");
-          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            btn.style.display = "block";
-          } else {
-            btn.style.display = "none";
-          }
-        };
-        document.getElementById("btnTopo").onclick = function () {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        };
-      </script>
 </body>
 
 </html>
